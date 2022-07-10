@@ -46,7 +46,7 @@ export default function Header() {
     <AppBar position="relative">
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
-          <Link className={classes.homeLink} to="/">Epam OneX Store</Link>
+          <Link className={classes.homeLink} to="/">Epam OneX Store Serverless</Link>
         </Typography>
 
         {auth && (
