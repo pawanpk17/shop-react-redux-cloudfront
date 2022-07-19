@@ -41,7 +41,8 @@ export default function Products() {
         id: product.id,
         title: product.title,
         price: product.price,
-        description: product.description
+        description: product.description,
+        image: product.image
       }))));
     //setProducts(productList);
   }, [])
@@ -53,7 +54,7 @@ export default function Products() {
           <Card className={classes.card}>
             <CardMedia
               className={classes.cardMedia}
-              image={`https://source.unsplash.com/random?sig=${index}`}
+              image={product.image}
               title="Image title"
             />
             <CardContent className={classes.cardContent}>
